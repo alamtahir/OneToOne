@@ -1,10 +1,7 @@
 package com.example.demo;
 
-import com.example.demo.entity.Customer;
 import com.example.demo.entity.FoodItem;
 import com.example.demo.entity.FoodOrder;
-import com.example.demo.entity.Orders;
-import com.example.demo.repo.CustomerRepo;
 import com.example.demo.repo.FoodRepo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
