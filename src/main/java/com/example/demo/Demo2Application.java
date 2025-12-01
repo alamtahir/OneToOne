@@ -13,16 +13,7 @@ public class Demo2Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx = SpringApplication.run(Demo2Application.class, args);
-		User user = new User();
-		user.setName("xyz");
 
-		Profile profile = new Profile();
-		profile.setProfile_name("java");
-		user.setProfile(profile);
-		profile.setUser(user);
-		UserRepo bean = ctx.getBean(UserRepo.class);
-		bean.save(user);
-		
 
 	}
 
