@@ -12,6 +12,7 @@ import java.util.UUID;
 
 @Entity
 @Data
+// Represents a food order made by a customer
 public class FoodOrder {
     @Id
     @GeneratedValue
