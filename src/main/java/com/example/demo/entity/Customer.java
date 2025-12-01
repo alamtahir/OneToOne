@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Data
 public class Customer {
 
     @Id
@@ -16,11 +18,5 @@ public class Customer {
     private UUID id;
     private String name;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    private List<Order> orders = new ArrayList<>();
-
-    // Add helper method
-    public void addOrder(Order order) {
-        order.setCustomer(this);
-        this.orders.add(order);
-    }
+    private List<Orders> orders = new ArrayList<>();
 }

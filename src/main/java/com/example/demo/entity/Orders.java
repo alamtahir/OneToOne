@@ -8,7 +8,8 @@ import java.util.UUID;
 
 @Entity
 @Data
-public class Order {
+
+public class Orders {
 
     @Id
     @GeneratedValue
@@ -20,6 +21,4 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
-
-    // getters & setters
 }
