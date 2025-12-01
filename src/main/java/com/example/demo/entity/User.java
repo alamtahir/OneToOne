@@ -15,7 +15,6 @@ import lombok.Data;
 
 @Entity
 @Data
-//userclass
 public class User {
 
 	@Id
