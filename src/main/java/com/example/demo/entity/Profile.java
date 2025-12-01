@@ -14,6 +14,7 @@ import lombok.Data;
 
 @Data
 @Entity
+//profile
 public class Profile {
 
 	@Id
