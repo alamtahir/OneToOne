@@ -1,5 +1,4 @@
-cat > .github/workflows/ci.yml <<'YML'
-name: Java CI — build on push
+name: Java CI - build on push
 
 on:
   push:
@@ -32,4 +31,3 @@ jobs:
       with:
         name: app-jar
         path: target/*.jar
-YML
