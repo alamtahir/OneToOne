@@ -26,4 +26,8 @@ public class Profile {
 	@OneToOne(mappedBy = "profile", cascade = CascadeType.ALL)
 	private User user;
 
+	
+	
+	
+	
 }
